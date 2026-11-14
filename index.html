@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefhralmuel G. Espiritu | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #101d3a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #61a5ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #61a5ff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #101d3a, #2458a6);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #dce8ff;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            background: #61a5ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 55px 10%;
+        }
+
+        section h2 {
+            color: #17376b;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #e2edff;
+            color: #17376b;
+            padding: 18px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        pre {
+            background: #101d3a;
+            color: #dce8ff;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 13px;
+        }
+
+        footer {
+            background: #101d3a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyPortfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Hi, I'm Jefhralmuel!</h1>
+        <p>BSIT Student | Future IT Professional</p>
+        <button onclick="document.getElementById('about').scrollIntoView()">
+            Explore My Portfolio
+        </button>
+    </div>
+
+    <section id="about">
+        <h2>Personal Information</h2>
+        <div class="card">
+            <p><b>Name:</b> Jefhralmuel G. Espiritu</p>
+            <p><b>Course:</b> Bachelor of Science in Information Technology</p>
+            <p><b>Section:</b> BSIT-1D</p>
+            <p><b>College:</b> Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+            <p><b>Interest:</b> Technology, programming, and learning new skills.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Educational Background</h2>
+        <div class="card">
+            <h3>College</h3>
+            <p>BS Information Technology</p>
+            <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+        </div>
+
+        <div class="card">
+            <h3>Senior High School</h3>
+            <p>General Academic Strand (GAS)</p>
+            <p>School: Add your Senior High School name here.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill">Basic Programming</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Creativity</div>
+            <div class="skill">Teamwork</div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h2>CC102 Final Project</h2>
+        <div class="card">
+            <h3>Smart Student Helper</h3>
+            <p>
+                A Java programming project designed to help students
+                perform simple tasks such as multiplication tables,
+                palindrome checking, date and age information,
+                diamond patterns, and SDG awareness.
+            </p>
+
+            <h3 style="margin-top:20px;">Java Code Sample</h3>
+            <pre>
+public class SmartStudentHelper {
+    public static void main(String[] args) {
+        System.out.println("SMART STUDENT HELPER");
+        System.out.println("Welcome, Student!");
+        System.out.println("1. Multiplication Table");
+        System.out.println("2. Palindrome Checker");
+        System.out.println("3. Date and Age");
+        System.out.println("4. Diamond Pattern");
+        System.out.println("5. SDG Awareness");
+        System.out.println("6. Exit");
+    }
+}
+            </pre>
+            <p style="margin-top:15px;">
+                Note: This is only a sample code, not the complete
+                original CC102 project.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Jefhralmuel G. Espiritu</p>
+        <p>BSIT-1D | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
